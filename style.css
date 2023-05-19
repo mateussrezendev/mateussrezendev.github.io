@@ -168,3 +168,36 @@
     color: #eaff00;
     right: 0;
   }
+
+  .wrapper-img{
+    filter: grayscale(1);
+  
+    object-fit: cover;
+  
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .wrapper-img:hover{
+    filter: none;
+  
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+  .wrapper-img2{
+    filter: brightness(1.2);
+  
+    object-fit: cover;
+  
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .wrapper-img2:hover{
+    filter: none;
+  
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
