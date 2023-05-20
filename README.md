@@ -34,5 +34,5 @@
   </tr>
 </table>
 
-<h2>:dollar: Licença</h2>
+<h2>🔒 Licença</h2>
 <b>A utilização dos arquivos para fins diferentes de aprendizado é proibida.</b>
