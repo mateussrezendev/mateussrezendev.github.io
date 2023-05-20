@@ -15,17 +15,17 @@
   
 </div>
 
-<h2>:bookmark_tabs: Descrição</h2>
-<p>Meu portfólio. Aplicação criada para mostrar os projetos que irei desenvolver durante minha carreira.</p>
+<h2>📚 Descrição</h2>
+<p>Apresento-lhes meu portfólio, uma aplicação desenvolvida para exibir os projetos que irei desenvolver ao longo da minha carreira.</p>
 
 
 
-<h2>:hammer: Créditos</h2>
+<h2>🙏 Créditos</h2>
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/mateussrezendev">
-        <img src="assets/img/profile.jpg" width="100px;" alt="Foto do Mateus"/><br>
+        <img src="assets/img/profile.jpg" width="100px;" alt="Foto do Mateus de Rezende Santos"/><br>
         <sub>
           <b>Mateus de Rezende santos</b>
         </sub>
@@ -35,4 +35,4 @@
 </table>
 
 <h2>:dollar: Licença</h2>
-<b>Proibida a utilização dos arquivos para fins diferentes de aprendizado.</b>
+<b>A utilização dos arquivos para fins diferentes de aprendizado é proibida.</b>
