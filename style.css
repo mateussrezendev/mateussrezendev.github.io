@@ -34,7 +34,7 @@
     color: rgb(0, 0, 0);
   }
   nav a:hover span {
-    color: #f20a0a;
+    color: #45936c;
     background: white;
     border-radius: 100em;
   }
@@ -69,22 +69,22 @@
   /* Sobre a pseudo-classe :nth-child -> https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child */
   
   nav a:nth-child(6n + 1) span:before {
-    background: white;
+    background: #ffc219;
   }
   nav a:nth-child(6n + 2) span:before {
-    background: white;
+    background: #61d4b0;
   }
   nav a:nth-child(6n + 3) span:before {
-    background: white;
+    background: #8ee696;
   }
   nav a:nth-child(6n + 4) span:before {
-    background: white;
+    background: #baf77c;
   }
   nav a:nth-child span:before {
-    background: white;
+    background: #c5e65c;
   }
-  nav a:nth-child(6n + 6) span:before {
-    background: white;
+  nav a:nth-child(6n + 5) span:before {
+    background: #e8ff65;
   }
   
   footer {
@@ -92,8 +92,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: white;
+    background-color: transparent;
+    color: transparent;
     text-align: right;
   }
   
