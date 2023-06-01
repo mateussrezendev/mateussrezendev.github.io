@@ -9,7 +9,7 @@
   
 </div>
 
-<img src ="assets/img/Portfólio.png" />
+<img src ="img/Portfólio.png" />
 
 <div style="display: inline_block">
   
@@ -25,7 +25,7 @@
   <tr>
     <td align="center">
       <a href="https://github.com/mateussrezendev">
-        <img src="assets/img/profile.jpg" width="100px;" alt="Foto do Mateus de Rezende Santos"/><br>
+        <img src="img/profile.jpg" width="100px;" alt="Foto do Mateus de Rezende Santos"/><br>
         <sub>
           <b>Mateus de Rezende santos</b>
         </sub>
