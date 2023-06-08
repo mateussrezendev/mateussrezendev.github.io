@@ -10,7 +10,7 @@ nav {
   nav a span {
     color: #333;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2em;
     padding: 5px 20px;
     display: inline-flex;
     font-weight: 700;
@@ -53,7 +53,7 @@ nav {
   }
 
 nav a:nth-child(6n + 1) span:before {
-    background: #a4ca39;
+    background: #a4c350;
   }
   nav a:nth-child(6n + 2) span:before {
     background: #61d4b0;
@@ -65,23 +65,23 @@ nav a:nth-child(6n + 1) span:before {
     background: #d29ebc;
   }
   nav a:nth-child(6n + 5) span:before {
-    background: #1a98ff;
+    background: #72b4ea;
   } 
   nav a:nth-child(6n + 6) span:before {
-    background: #15ff08;;
+    background: #98e294;;
   }
   nav a:nth-child(6n + 7) span:before {
-    background: #ff0000;
+    background: #b76b6b;
   }
   nav a:nth-child(6n + 8) span:before {
-    background: #3e4ab7;
+    background: #a9b0ee;
   }
   nav a:nth-child(6n + 9) span:before {
-    background: #ffdd00;
+    background: #fcf0a0;
   }
   nav a:nth-child(6n + 10) span:before {
-    background: #ff5a5a;
+    background: #ee9a9a;
   } 
   nav a:nth-child(6n + 11) span:before {
-    background: #00ffa2;
+    background: #95e4c7;
   } 
