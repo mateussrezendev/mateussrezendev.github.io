@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="projetos.css">
+    <title>Portfólio | Mateus de Rezende Santos</title>
+    <style>
+        .project-name {
+            text-align: center;
+            font-size: 2em;
+            padding: 10px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.5s;
+            white-space: nowrap;
+        }
+
+        .arrow-next, .arrow-prev {
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: white;
+            transition: opacity 0.5s;
+        }
+
+        .arrow-next,
+        .arrow-prev {
+            font-family: 'Arial', sans-serif;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .arrow-next:hover, .arrow-prev:hover {
+            color: #45936c;
+        }
+
+        .arrow-next {
+            right: 10px;
+            transform: rotate(45deg);
+        }
+
+        .arrow-prev {
+            left: 10px;
+            transform: rotate(225deg);
+        }
+
+        .footer-icons {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            display: flex;
+            gap: 10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .footer-icons img {
+            width: 3%;
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body class="body1">
+    <nav>
+        <a href="https://mateussrezendev.github.io/android-css/" target="_blank">
+            <span data-texto="Android Pure CSS">Android Pure CSS</span>
+        </a>
+        <!-- Adicione outros projetos conforme necessário -->
+    </nav>
+
+    <!-- Seção adicionada para mostrar o nome do projeto e as setas de navegação -->
+    <div class="project-name" id="projectName">Android Pure CSS</div>
+    <div class="arrow-next" id="arrowNext">&#9654;</div>
+    <div class="arrow-prev" id="arrowPrev">&#9664;</div>
+
+    <!-- Seção para mostrar os ícones de contato -->
+    <div class="footer-icons">
+        <a href="https://mateussrezendev.github.io/">
+            <img class="wrapper-img" src="./img/casa.png" alt="Home">
+        </a>
+
+        <a href="mailto:mateusrs.dev.senai@gmail.com" target="_blank">
+            <img class="wrapper-img" src="./img/mail.png" alt="E-mail">
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=5515996814528&text=Ol%C3%A1%20Mateus!" target="_blank">
+            <img class="wrapper-img" src="./img/zap.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://github.com/mateussrezendev" target="_blank">
+            <img class="wrapper-img" src="./img/github.png" alt="GitHub">
+        </a>
+
+        <a href="https://www.linkedin.com/in/mateus-de-rezende-santos-33038526b" target="_blank">
+            <img class="wrapper-img" src="./img/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+
+    <script>
+        const projectNames = ["Android Pure CSS", "Blocos de Cores", "Desenhos Vetoriais", "Dia das mulheres", "Prime Video", "Fundamento_Java", "Hortifruti CSS", "Pacote Office", "Pokedesafio CSS", "Projeto SESI", "Servicos de Rede"];
+        let currentIndex = 0;
+
+        const projectNameElement = document.getElementById('projectName');
+        const arrowNextElement = document.getElementById('arrowNext');
+        const arrowPrevElement = document.getElementById('arrowPrev');
+        const navLink = document.querySelector('nav a span');
+
+        arrowNextElement.addEventListener('click', showNextProject);
+        arrowPrevElement.addEventListener('click', showPrevProject);
+
+        function showNextProject() {
+            currentIndex = (currentIndex + 1) % projectNames.length;
+            updateProject();
+        }
+
+        function showPrevProject() {
+            currentIndex = (currentIndex - 1 + projectNames.length) % projectNames.length;
+            updateProject();
+        }
+
+        function updateProject() {
+            const currentProjectName = projectNames[currentIndex];
+            projectNameElement.innerHTML = currentProjectName;
+
+            // Atualizar o link do botão para o próximo projeto
+            const projectLinkElement = document.querySelector('nav a');
+            projectLinkElement.href = `https://mateussrezendev.github.io/${currentProjectName.toLowerCase().replace(/\s/g, '-')}/`;
+
+            // Atualizar o texto do botão para o próximo projeto
+            navLink.textContent = currentProjectName;
+            navLink.setAttribute('data-texto', currentProjectName);
+        }
+
+        // Adicione um ouvinte de evento para a área de navegação para mostrar as setas de navegação
+        const nav = document.querySelector('nav');
+
+        nav.addEventListener('mouseenter', () => {
+            arrowNextElement.style.opacity = '1';
+            arrowPrevElement.style.opacity = '1';
+        });
+
+        nav.addEventListener('mouseleave', () => {
+            arrowNextElement.style.opacity = '1';
+            arrowPrevElement.style.opacity = '1';
+        });
+
+        // Adicione um ouvinte de evento para cada link de projeto para atualizar o título gigante
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                projectNameElement.innerHTML = link.querySelector('span').textContent;
+            });
+        });
+    </script>
+</body>
+<footer>
+    <a target="_self" href="https://mateussrezendev.github.io/"><button class="button" style="vertical-align:middle"><span>Voltar</span></button></a><p>
+   <a href="https://mateussrezendev.github.io/">
+   <img class="wrapper-img" src="./img/casa.png" width="3%" height="20%"></a>
+
+   <a href="mailto:mateusrs.dev.senai@gmail.com" target="_blank">
+    <img class="wrapper-img" src="./img/mail.png" width="3%" height="20%"></a>
+
+    <a href="https://api.whatsapp.com/send?phone=5515996814528&text=Ol%C3%A1%20Mateus!" target="_blank">
+        <img class="wrapper-img" src="./img/zap.png" width="3%" height="20%"></a>
+        
+   <a href="https://github.com/mateussrezendev" target="_blank">
+    <img class="wrapper-img" src="./img/github.png" width="3%" height="20%"></a>
+
+    <a href="https://www.linkedin.com/in/mateus-de-rezende-santos-33038526b" target="_blank">
+        <img class="wrapper-img" src="./img/linkedin.png" width="3%" height="20%"></a>
+    
+</footer>
+
+</html>
