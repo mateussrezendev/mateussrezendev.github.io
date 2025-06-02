@@ -8,9 +8,9 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.io">
     <title>Portfólio | Mateus de Rezende Santos</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <style>
-        /* Adicione ou ajuste as propriedades de transição conforme necessário */
         nav a span {
             transition: color 0.5s;
         }
@@ -50,42 +50,7 @@
             <span data-texto="Contato">Contato</span>
         </a>
     </nav>
-    <script>
-        // Adicione este script ao final do body ou em um arquivo externo
-
-        // Seleciona todos os títulos na barra de navegação
-        const titles = document.querySelectorAll('nav a span');
-
-        // Seleciona a imagem da sua foto
-        const profileImage = document.querySelector('.circle');
-
-        // Adiciona um ouvinte de evento a cada título
-        titles.forEach(title => {
-            title.addEventListener('mouseenter', () => {
-                // Quando o mouse entra no título, adiciona classes para animar a foto e esconder outros títulos
-                titles.forEach(otherTitle => {
-                    if (otherTitle !== title) {
-                        otherTitle.style.color = 'transparent';
-                    }
-                });
-
-                profileImage.classList.remove('profile-hidden');
-                profileImage.classList.add('profile-visible');
-                profileImage.style.marginTop = '50px'; // Ajuste conforme necessário
-            });
-
-            title.addEventListener('mouseleave', () => {
-                // Quando o mouse sai do título, remove as classes e restaura o layout
-                titles.forEach(otherTitle => {
-                    otherTitle.style.color = '';
-                });
-
-                profileImage.classList.remove('profile-visible');
-                profileImage.classList.add('profile-hidden');
-                profileImage.style.marginTop = ''; // Volta ao valor padrão
-            });
-        });
-    </script>
+    
 </body>
 
 <footer>
