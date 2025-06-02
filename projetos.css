@@ -1,0 +1,61 @@
+.project-name {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+    white-space: nowrap;
+}
+
+.arrow-next,
+.arrow-prev {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+    transition: opacity 0.5s;
+}
+
+.arrow-next,
+.arrow-prev {
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-next:hover,
+.arrow-prev:hover {
+    color: #45936c;
+}
+
+.arrow-next {
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+.arrow-prev {
+    left: 10px;
+    transform: rotate(225deg);
+}
+
+.footer-icons {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.footer-icons img {
+    width: 3%;
+    height: 20%;
+}
